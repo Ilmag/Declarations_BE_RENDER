@@ -7,7 +7,7 @@ from django.db.models import Sum
 
 class DeclarationList(generics.ListCreateAPIView):
     queryset = Declaration.objects.all().order_by('last_name', 'first_name', 'birth_date', 'birth_place',
-                                                  'organization', 'submited_at')
+                                                  'organization_txt', 'submited_at')
     serializer_class = DeclarationSerializer
     pagination_class = CustomPagination
     filter_backends = [DjangoFilterBackend]
