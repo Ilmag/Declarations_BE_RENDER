@@ -6,6 +6,7 @@ pip install django
 pip install dj-database-url
 pip install psycopg2
 pip install whitenoise
+pip install gunicorn
 
 python manage.py collectstatic --no-input
 python manage.py migrate
