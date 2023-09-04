@@ -2,7 +2,7 @@
 # exit on error
 set -o errexit
 
-pip install django 4.1
+pip install django
 pip install django-rest-framework
 pip install psycopg2
 pip install django-cors-headers
