@@ -1,0 +1,28 @@
+asgiref @ file:///C:/Users/BUILDE~1/AppData/Local/Temp/abs_cchykh5sgr/croots/recipe/asgiref_1661287542702/work
+Brotli==1.0.9
+brotlipy==0.7.0
+certifi @ file:///C:/b/abs_4a0polqwty/croot/certifi_1683875377622/work/certifi
+cffi @ file:///C:/b/abs_49n3v2hyhr/croot/cffi_1670423218144/work
+charset-normalizer @ file:///tmp/build/80754af9/charset-normalizer_1630003229654/work
+cryptography @ file:///C:/b/abs_b28tzldafl/croot/cryptography_1686613103834/work
+dj-database-url==2.0.0
+Django @ file:///C:/Users/BUILDE~1/AppData/Local/Temp/abs_eeor5o9jj8/croots/recipe/django_1661292534510/work
+django-cors-headers==4.1.0
+django-filter==23.2
+djangorestframework==3.14.0
+gunicorn==21.2.0
+idna @ file:///C:/b/abs_bdhbebrioa/croot/idna_1666125572046/work
+packaging==23.1
+psycopg==3.1.9
+psycopg2==2.9.6
+pycparser @ file:///tmp/build/80754af9/pycparser_1636541352034/work
+pyOpenSSL @ file:///C:/b/abs_552w85x1jz/croot/pyopenssl_1677607703691/work
+PySocks @ file:///C:/ci_310/pysocks_1642089375450/work
+pytz==2023.3
+requests @ file:///C:/b/abs_41owkd5ymz/croot/requests_1682607524657/work
+sqlparse @ file:///C:/b/abs_83jn6owfpc/croot/sqlparse_1668793499314/work
+typing_extensions==4.6.3
+tzdata @ file:///tmp/build/80754af9/python-tzdata_1611693927741/work
+urllib3 @ file:///C:/b/abs_889_loyqv4/croot/urllib3_1686163174463/work
+whitenoise==6.5.0
+win-inet-pton @ file:///C:/ci_310/win_inet_pton_1642658466512/work
