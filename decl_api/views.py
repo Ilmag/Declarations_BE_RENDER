@@ -1,3 +1,14 @@
-from django.shortcuts import render
+from rest_framework import generics
+from .models import Declaration
+from .serializers import DeclarationSerializer
+from .paginators import CustomPagination
+from django_filters.rest_framework import DjangoFilterBackend
+from django.db.models import Sum
 
-# Create your views here.
+class DeclarationList(generics.ListCreateAPIView):
+    queryset = Declaration.objects.all().order_by('last_name', 'first_name', 'birth_date', 'birth_place',
+                                                  'organization', 'submited_at')
+    serializer_class = DeclarationSerializer
+    pagination_class = CustomPagination
+    filter_backends = [DjangoFilterBackend]
+    filterset_fields = ['last_name']
