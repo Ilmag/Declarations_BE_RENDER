@@ -9,6 +9,7 @@ pip install whitenoise
 pip install gunicorn
 pip install django-rest-framework
 pip install django-filter
+pip install django-cors-headers
 
 python manage.py collectstatic --no-input
 python manage.py makemigrations
