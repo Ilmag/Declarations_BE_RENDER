@@ -2,7 +2,11 @@
 # exit on error
 set -o errexit
 
-pip install -r requirements.txt
+pip install django 4.1
+pip install django-rest-framework
+pip install psycopg2
+pip install django-cors-headers
+pip install django-filter
 
 python manage.py collectstatic --no-input
 python manage.py migrate
