@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 # SECRET_KEY = "django-insecure-jnka4g+)4uk74r8lsu+ol=62@m6!e@_jer=)4ni)j@nl_*ef3d"
-SECRET_KEY = os.environ.get('SECRET_KEY', default='your secret key')
+SECRET_KEY = os.environ.get('SECRET_KEY', default='django-insecure-jnka4g+)4uk74r8lsu+ol=62@m6!e@_jer=)4ni)j@nl_*ef3d')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'RENDER' not in os.environ
@@ -96,7 +96,8 @@ WSGI_APPLICATION = "declatations.wsgi.application"
 DATABASES = {
     'default': dj_database_url.config(
         # Feel free to alter this value to suit your needs.
-        default='postgresql://postgres:postgres@localhost:5432/mysite',
+        # default='postgresql://postgres:postgres@localhost:5432/mysite',
+        default='postgresql://postgres:postgres@localhost:5432/declatations',
         conn_max_age=600
     )
 }
