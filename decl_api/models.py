@@ -19,6 +19,10 @@ class Declarant(models.Model):
         db_table = 'declarants'
 
 
+GIFT_TYPE_CHOICES = [('MN', 'ფული'), ('RE', 'უძრავი ქონება'), ('ME', 'მოძრავი ნივთი'),
+                     ('PR', 'ჯილდო'), ('OT', 'სხვა')]
+
+
 class Gift(models.Model):
     decl_id = models.IntegerField(null=True, blank=True)
     type = models.CharField(max_length=255, null=True, blank=True)
@@ -38,7 +42,7 @@ class Gift(models.Model):
 
     class Meta:
         db_table = 'gifts'
-        
+
 
 class Declaration(models.Model):
     declarant = models.ForeignKey(Declarant, on_delete=models.CASCADE)
